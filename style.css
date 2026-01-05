@@ -88,7 +88,7 @@ header {
 }
 
 .main-content {
-    flex: 1 1 600px;
+    flex: 0 0 700px;
     min-width: 300px;
 }
 
@@ -100,7 +100,7 @@ header {
 
 /* Contact Form Section */
 .bts {
-    flex: 1 1 400px;
+    flex: 0 0 570px;
     min-width: 300px;
     background-image: url(form_bg.jpg);
     background-size: cover;
@@ -139,6 +139,7 @@ header {
     margin: 15px 0;
     position: relative;
     bottom: 27px;
+    margin-bottom: -12px;
 }
 
 .information p {
@@ -615,7 +616,10 @@ header {
         padding: 20px 40px;
     }
 
-    .rm,
+    .rm {
+        flex-direction: row;
+    }
+
     .thv {
         padding: 20px 40px;
     }
@@ -641,7 +645,7 @@ header {
     }
 
     .rm {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .left-container input {
@@ -663,4 +667,16 @@ header {
         flex-direction: column;
         text-align: center;
     }
+}
+
+@media (max-width: 1326px) {
+    .rm {
+        flex-direction: column;
+    }
+
+    .bts {
+        margin-top: -170px;
+
+    }
+
 }
